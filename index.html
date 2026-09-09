@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><style>:root { --background: #fff; --foreground: #16181d; --primary: #2549ed; --primary-foreground: #fff; --border: #dcdfe5; --muted: #f3f5fa; --muted-foreground: #5e626e; --radius: .5rem; }
+.dark { --background: #12151e; --foreground: #f5f7fc; --primary: #99adff; --primary-foreground: #12151e; --border: #3e4456; --muted: #1d2230; --muted-foreground: #bcc3d5; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; font-size: 1rem; }
+a { color: inherit; text-decoration: none; text-underline-offset: .3em; }
+a:hover { color: var(--primary); }
+a:focus-visible { outline: 3px solid var(--primary); outline-offset: 6px; border-radius: 2px; }
+::selection { background: var(--primary); color: var(--primary-foreground); }
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 10; background: var(--foreground); color: var(--background); padding: .75rem 1rem; }
+.skip-link:focus { top: 1rem; }
+.page-shell { max-width: 1440px; padding: 0 clamp(1.5rem, 6vw, 6rem); margin: auto; }
+.site-header { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 1px solid var(--border); }
+.wordmark { font-size: 1.1rem; font-weight: 650; display: flex; align-items: center; gap: .8rem; }
+.brand-dot { width: 13px; height: 13px; border-radius: 50%; background: var(--primary); }
+nav { display: flex; gap: 2rem; font-size: .95rem; }
+.intro { padding: clamp(3rem, 6vw, 6rem) 0 3.5rem; }
+.eyebrow { font-size: .875rem; letter-spacing: .12em; color: var(--muted-foreground); }
+.eyebrow > span { margin-right: 1rem; }
+h1 { margin: 2.3rem 0 2.6rem; font-size: clamp(2.4rem, 7.5vw, 7rem); line-height: 1.22; font-weight: 650; letter-spacing: -.06em; }
+.blue { color: var(--primary); }
+.intro-bottom { display: flex; justify-content: space-between; align-items: end; gap: 2.5rem; }
+.introduction { margin: 0; max-width: 34rem; line-height: 1.9; font-size: clamp(1rem, 1.5vw, 1.15rem); color: var(--muted-foreground); }
+.about-link { display: flex; gap: 2rem; align-items: center; flex-shrink: 0; font-size: 1rem; padding: .5rem 0; border-bottom: 1px solid currentColor; }
+.about-link span { font-size: 1.75rem; line-height: 1; }
+.about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: clamp(3rem, 6vw, 6rem) 0; border-top: 1px solid var(--border); }
+h2 { font-size: clamp(2rem, 3.3vw, 3rem); letter-spacing: -.04em; line-height: 1.35; margin: 1.25rem 0 0; font-weight: 600; }
+.about-copy { align-self: center; font-size: 1.125rem; line-height: 1.9; color: var(--muted-foreground); white-space: pre-line; }
+.contact-section { padding: 3rem; background: var(--primary); color: var(--primary-foreground); margin-bottom: 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+.contact-section h2 { margin: 0; }
+.contact-links { display: flex; flex-wrap: wrap; gap: 2rem; }
+.contact-links a { border-bottom: 1px solid currentColor; padding: .5rem 0; }
+.contact-links a:hover { color: inherit; opacity: .8; }
+.site-footer { padding: 2rem 0; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: .875rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+@media (max-width: 640px) { .site-header { min-height: 80px; } .intro-bottom { align-items: start; flex-direction: column; gap: 1.5rem; } .about-section { grid-template-columns: 1fr; gap: 1.5rem; } .about-copy { margin: 0; } .contact-section { padding: 2rem 1.5rem; flex-direction: column; align-items: start; } .site-footer > span:nth-child(2) { display: none; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style><title>bbc | 个人主页</title><meta name="description" content="bbc 的个人主页 · Taki-Miyamitsu · Nanjing University。"/>
+</head><body><a class="skip-link" href="#main">跳到正文</a><div class="page-shell"><header class="site-header"><a class="wordmark" href="#main"><span class="brand-dot" aria-hidden="true"></span>bbc</a><nav aria-label="页面导航"><a href="#about">关于</a><a href="#contact">联系</a></nav></header><main id="main"><section class="intro" aria-labelledby="greeting"><div class="eyebrow"><span aria-hidden="true">01 /</span> 很高兴认识你</div><h1 id="greeting">你好<span class="blue">。</span><br/>欢迎来到<br/><span class="blue">我的小世界 ↗</span></h1><div class="intro-bottom"><p class="introduction">这里是 bbc 的个人主页。欢迎来访，也欢迎在 GitHub 交流。</p><a class="about-link" href="#about">认识一下 <span aria-hidden="true">↓</span></a></div></section><section class="about-section" id="about" aria-labelledby="about-title"><div><span class="eyebrow">02 / 关于</span><h2 id="about-title">从这里，<br/>认识我。</h2></div><p class="about-copy">Nanjing University
+GitHub · Taki-Miyamitsu</p></section><section class="contact-section" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">保持联系。</h2><div class="contact-links"><a href="https://github.com/Taki-Miyamitsu" rel="me">GitHub ↗</a></div></section></main><footer class="site-footer"><span>bbc</span><span>谢谢你的来访。</span><a href="#main">回到顶部 ↑</a></footer></div></body></html>
