@@ -1,40 +1,107 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><style>:root { --background: #fff; --foreground: #16181d; --primary: #2549ed; --primary-foreground: #fff; --border: #dcdfe5; --muted: #f3f5fa; --muted-foreground: #5e626e; --radius: .5rem; }
-.dark { --background: #12151e; --foreground: #f5f7fc; --primary: #99adff; --primary-foreground: #12151e; --border: #3e4456; --muted: #1d2230; --muted-foreground: #bcc3d5; }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
-body { margin: 0; background: var(--background); color: var(--foreground); font-family: "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; font-size: 1rem; }
-a { color: inherit; text-decoration: none; text-underline-offset: .3em; }
-a:hover { color: var(--primary); }
-a:focus-visible { outline: 3px solid var(--primary); outline-offset: 6px; border-radius: 2px; }
-::selection { background: var(--primary); color: var(--primary-foreground); }
-.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 10; background: var(--foreground); color: var(--background); padding: .75rem 1rem; }
-.skip-link:focus { top: 1rem; }
-.page-shell { max-width: 1440px; padding: 0 clamp(1.5rem, 6vw, 6rem); margin: auto; }
-.site-header { min-height: 104px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 1px solid var(--border); }
-.wordmark { font-size: 1.1rem; font-weight: 650; display: flex; align-items: center; gap: .8rem; }
-.brand-dot { width: 13px; height: 13px; border-radius: 50%; background: var(--primary); }
-nav { display: flex; gap: 2rem; font-size: .95rem; }
-.intro { padding: clamp(3rem, 6vw, 6rem) 0 3.5rem; }
-.eyebrow { font-size: .875rem; letter-spacing: .12em; color: var(--muted-foreground); }
-.eyebrow > span { margin-right: 1rem; }
-h1 { margin: 2.3rem 0 2.6rem; font-size: clamp(2.4rem, 7.5vw, 7rem); line-height: 1.22; font-weight: 650; letter-spacing: -.06em; }
-.blue { color: var(--primary); }
-.intro-bottom { display: flex; justify-content: space-between; align-items: end; gap: 2.5rem; }
-.introduction { margin: 0; max-width: 34rem; line-height: 1.9; font-size: clamp(1rem, 1.5vw, 1.15rem); color: var(--muted-foreground); }
-.about-link { display: flex; gap: 2rem; align-items: center; flex-shrink: 0; font-size: 1rem; padding: .5rem 0; border-bottom: 1px solid currentColor; }
-.about-link span { font-size: 1.75rem; line-height: 1; }
-.about-section { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; padding: clamp(3rem, 6vw, 6rem) 0; border-top: 1px solid var(--border); }
-h2 { font-size: clamp(2rem, 3.3vw, 3rem); letter-spacing: -.04em; line-height: 1.35; margin: 1.25rem 0 0; font-weight: 600; }
-.about-copy { align-self: center; font-size: 1.125rem; line-height: 1.9; color: var(--muted-foreground); white-space: pre-line; }
-.contact-section { padding: 3rem; background: var(--primary); color: var(--primary-foreground); margin-bottom: 4rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.contact-section h2 { margin: 0; }
-.contact-links { display: flex; flex-wrap: wrap; gap: 2rem; }
-.contact-links a { border-bottom: 1px solid currentColor; padding: .5rem 0; }
-.contact-links a:hover { color: inherit; opacity: .8; }
-.site-footer { padding: 2rem 0; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: .875rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-@media (max-width: 640px) { .site-header { min-height: 80px; } .intro-bottom { align-items: start; flex-direction: column; gap: 1.5rem; } .about-section { grid-template-columns: 1fr; gap: 1.5rem; } .about-copy { margin: 0; } .contact-section { padding: 2rem 1.5rem; flex-direction: column; align-items: start; } .site-footer > span:nth-child(2) { display: none; } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style><title>北白川 | 个人主页</title><meta name="description" content="北白川的个人主页 · 南京大学计算机科学与技术系金融工程（计算机金融实验班）。"/>
-</head><body><a class="skip-link" href="#main">跳到正文</a><div class="page-shell"><header class="site-header"><a class="wordmark" href="#main"><span class="brand-dot" aria-hidden="true"></span>北白川</a><nav aria-label="页面导航"><a href="#about">关于</a><a href="#contact">联系</a></nav></header><main id="main"><section class="intro" aria-labelledby="greeting"><div class="eyebrow"><span aria-hidden="true">01 /</span> 很高兴认识你</div><h1 id="greeting">你好<span class="blue">。</span><br/>欢迎来到<br/><span class="blue">我的小世界 ↗</span></h1><div class="intro-bottom"><p class="introduction">这里是北白川的个人主页。欢迎来访，也欢迎在 GitHub 交流。</p><a class="about-link" href="#about">认识一下 <span aria-hidden="true">↓</span></a></div></section><section class="about-section" id="about" aria-labelledby="about-title"><div><span class="eyebrow">02 / 关于</span><h2 id="about-title">从这里，<br/>认识我。</h2></div><p class="about-copy">南京大学计算机科学与技术系
-金融工程（计算机金融实验班）
-GitHub · Taki-Miyamitsu</p></section><section class="contact-section" id="contact" aria-labelledby="contact-title"><h2 id="contact-title">保持联系。</h2><div class="contact-links"><a href="https://github.com/Taki-Miyamitsu" rel="me">GitHub ↗</a></div></section></main><footer class="site-footer"><span>北白川</span><span>谢谢你的来访。</span><a href="#main">回到顶部 ↑</a></footer></div></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="北白川的个人主页：计算机科学、金融工程、项目、阅读与随笔。">
+  <title>北白川 · 个人主页</title>
+  <style>
+    :root{--ink:#173326;--green:#44785B;--deep:#275F3E;--paper:#fff;--wash:#f2f6f3;--line:rgba(39,95,62,.34);--muted:#63746a;--serif:"Songti SC","STSong","Noto Serif CJK SC",Georgia,serif;--sans:Inter,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1.5rem}body{margin:0;color:var(--ink);background:var(--paper);font:1rem/1.75 var(--sans);-webkit-font-smoothing:antialiased}button,input,textarea{font:inherit}a{color:inherit;text-decoration:none}a:hover{color:var(--deep)}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px}::selection{color:#fff;background:var(--deep)}img{display:block;max-width:100%}
+    .skip{position:fixed;z-index:20;top:-5rem;left:1rem;padding:.7rem 1rem;color:#fff;background:var(--deep)}.skip:focus{top:1rem}.page{width:min(1280px,calc(100% - 3rem));margin:auto}
+    .utility{display:flex;justify-content:space-between;gap:1rem;padding:.65rem 0;border-bottom:1px solid var(--line);color:var(--deep);font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+    .masthead{padding:1.6rem 0 1.25rem;border-bottom:5px double var(--deep);text-align:center}.kicker{margin:0 0 .5rem;color:var(--green);font-size:.82rem;font-weight:700;letter-spacing:.25em;text-transform:uppercase}.masthead h1{margin:0;font:700 clamp(3.4rem,10vw,8.5rem)/1 var(--serif);letter-spacing:.08em}.subtitle{display:flex;justify-content:center;align-items:center;gap:.8rem;margin-top:.8rem;color:var(--deep);font:clamp(.9rem,2vw,1.12rem) var(--serif)}.subtitle:before,.subtitle:after{width:3.5rem;height:1px;content:"";background:var(--green)}
+    nav{display:flex;justify-content:center;flex-wrap:wrap;border-bottom:1px solid var(--line)}nav a{padding:.75rem clamp(.7rem,2.2vw,1.8rem);color:var(--deep);font-size:.86rem;font-weight:700;letter-spacing:.08em}nav a+a{border-left:1px solid var(--line)}
+    .lead{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(260px,.7fr);gap:2.3rem;padding:2.5rem 0 3rem;border-bottom:1px solid var(--line)}.lead-story{padding-right:2.3rem;border-right:1px solid var(--line)}.label{display:inline-flex;align-items:center;gap:.55rem;color:var(--deep);font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.label:before{width:1.8rem;height:3px;content:"";background:var(--green)}.lead h2{max-width:13ch;margin:1.1rem 0 1.35rem;font:700 clamp(2.25rem,5vw,4.8rem)/1.12 var(--serif);letter-spacing:-.03em}.lead h2 em{color:var(--green);font-style:normal}.standfirst{max-width:49rem;margin:0;color:#344b3e;font:clamp(1.08rem,2vw,1.35rem)/1.85 var(--serif)}.standfirst:first-letter{float:left;padding:.15rem .45rem 0 0;color:var(--deep);font-size:4.7rem;font-weight:700;line-height:.75}
+    .status{align-self:start;padding:1.4rem;color:#fff;background:var(--deep)}.status .overline{margin:0 0 1.5rem;font-size:.74rem;font-weight:700;letter-spacing:.16em;opacity:.76;text-transform:uppercase}.status h3{margin:0 0 .75rem;font:1.75rem/1.25 var(--serif)}.status p{margin:0;color:rgba(255,255,255,.82)}.folio{display:flex;justify-content:space-between;margin-top:2rem;padding-top:.7rem;border-top:1px solid rgba(255,255,255,.35);font-size:.75rem;letter-spacing:.08em}
+    section{padding:3.6rem 0;border-bottom:1px solid var(--line)}.section-head{display:grid;grid-template-columns:6rem minmax(0,1fr) auto;gap:1rem;align-items:end;margin-bottom:2rem}.num{color:var(--green);font:1.1rem var(--serif)}.section-head h2{margin:0;font:clamp(2rem,4.3vw,3.5rem)/1.1 var(--serif)}.section-note{margin:0;color:var(--muted);font-size:.85rem;text-align:right}
+    .profile{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:2.5rem}.profile-copy{columns:2 240px;column-gap:2.2rem}.profile-copy p{margin:0 0 1rem}.profile-copy strong{color:var(--deep)}.facts{margin:0;border-top:3px solid var(--deep)}.facts div{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line)}.facts dt{color:var(--green);font-size:.8rem;font-weight:700;letter-spacing:.08em}.facts dd{margin:0;font-family:var(--serif);font-weight:700}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);margin-top:2.5rem;border-top:1px solid var(--line);border-left:1px solid var(--line)}.skill{min-height:14rem;padding:1.35rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.skill-index{display:block;margin-bottom:2.5rem;color:var(--green);font:.9rem var(--serif)}.skill h3{margin:0 0 .65rem;color:var(--deep);font:1.35rem var(--serif)}.skill p{margin:0;color:var(--muted);font-size:.92rem;line-height:1.7}
+    .columns{display:grid;grid-template-columns:1fr 1fr;gap:3rem}.empty{min-height:15rem;display:grid;align-content:center;justify-items:start;padding:2rem;background:var(--wash);border-top:3px solid var(--deep)}.empty b{color:var(--green);font:3rem/1 var(--serif)}.empty h3{margin:.8rem 0 .35rem;font:1.55rem var(--serif)}.empty p{max-width:30rem;margin:0;color:var(--muted)}
+    .toolbar{display:none;align-items:center;justify-content:space-between;gap:1rem;margin:-1rem 0 1.5rem;padding:1rem;color:#fff;background:var(--deep)}.editing .toolbar{display:flex}.toolbar strong{display:block;font:1.1rem var(--serif)}.toolbar small{display:block;color:rgba(255,255,255,.72)}.button-row{display:flex;flex-wrap:wrap;gap:.6rem}.btn{min-height:2.65rem;padding:.6rem .95rem;border:1px solid var(--deep);color:#fff;background:var(--deep);cursor:pointer;font-size:.86rem;font-weight:700}.btn:hover{filter:brightness(.95)}.btn-light{color:var(--deep);background:#fff;border-color:#fff}.btn-outline{color:#fff;background:transparent;border-color:rgba(255,255,255,.55)}
+    .posts{display:grid;grid-template-columns:repeat(12,1fr);gap:1.5rem}.post{grid-column:span 4;display:flex;flex-direction:column;border-top:3px solid var(--deep)}.post:nth-child(5n+1){grid-column:span 8}.media{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:.9rem;overflow:hidden;background:var(--wash)}.media.one{grid-template-columns:1fr}.media img{width:100%;height:220px;object-fit:cover}.post:nth-child(5n+1) .media img{height:320px}.meta{display:flex;justify-content:space-between;gap:.75rem;margin-top:.85rem;color:var(--green);font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.post h3{margin:.55rem 0;font:1.55rem/1.3 var(--serif)}.content{margin:0;color:#45594d;white-space:pre-wrap}.actions{display:none;margin-top:auto;padding-top:1rem}.editing .actions{display:block}.delete{padding:.35rem .6rem;color:#7c3f3f;background:transparent;border:1px solid #b68181;cursor:pointer;font-size:.78rem}.posts-empty{grid-column:1/-1;padding:4rem 1rem;border-top:3px solid var(--deep);border-bottom:1px solid var(--line);text-align:center}.posts-empty strong{display:block;font:1.7rem var(--serif)}.posts-empty span{color:var(--muted)}
+    footer{display:grid;grid-template-columns:1fr auto 1fr;gap:1rem;align-items:center;padding:2rem 0 3rem;color:var(--deep);font-size:.82rem}footer strong{font:1.25rem var(--serif)}footer span{text-align:center}footer a{text-align:right;font-weight:700}
+    dialog{width:min(680px,calc(100% - 2rem));max-height:calc(100vh - 2rem);padding:0;border:0;color:var(--ink);background:#fff;box-shadow:0 24px 80px rgba(23,51,38,.3)}dialog::backdrop{background:rgba(17,38,27,.72)}.dialog-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.1rem 1.3rem;color:#fff;background:var(--deep)}.dialog-head h2{margin:0;font:1.45rem var(--serif)}.close{width:2.4rem;height:2.4rem;border:1px solid rgba(255,255,255,.5);color:#fff;background:transparent;cursor:pointer}.form{display:grid;gap:1rem;padding:1.35rem}.field{display:grid;gap:.4rem}.field label{color:var(--deep);font-size:.82rem;font-weight:800;letter-spacing:.06em}.field input,.field textarea{width:100%;padding:.75rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:0}.field textarea{min-height:9rem;resize:vertical}.field small{color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-actions{display:flex;justify-content:flex-end;padding-top:.5rem}.notice{min-height:1.6rem;margin:0;color:var(--deep);font-size:.82rem}.hidden{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+    @media(max-width:940px){.lead,.profile{grid-template-columns:1fr}.lead-story{padding-right:0;border-right:0}.skills{grid-template-columns:repeat(2,1fr)}.post,.post:nth-child(5n+1){grid-column:span 6}}
+    @media(max-width:680px){.page{width:min(100% - 2rem,1280px)}.utility span:last-child{display:none}nav{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}nav a{flex:0 0 auto}.section-head{grid-template-columns:3rem 1fr}.section-note{grid-column:2;text-align:left}.skills,.columns{grid-template-columns:1fr}.skill{min-height:auto}.skill-index{margin-bottom:1.3rem}.post,.post:nth-child(5n+1){grid-column:1/-1}.toolbar{align-items:flex-start;flex-direction:column}.form-grid{grid-template-columns:1fr}footer{grid-template-columns:1fr auto}footer span{display:none}}
+    @media print{nav,.toolbar,.actions,.skip{display:none!important}.page{width:100%}body{color:#000}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <div class="page">
+    <div class="utility"><span>Personal Journal · No. 01</span><span>Computer Science × Financial Engineering</span><span id="today">Nanjing</span></div>
+    <header class="masthead" id="top"><p class="kicker">Personal Homepage</p><h1>北白川</h1><div class="subtitle">南京大学 · 计算机科学与金融工程</div></header>
+    <nav aria-label="页面导航"><a href="#profile">个人信息</a><a href="#projects">个人项目</a><a href="#reading">在读文献</a><a href="#posts">文章与随笔</a><a href="https://github.com/Taki-Miyamitsu" rel="me">GitHub ↗</a></nav>
+    <main id="main">
+      <div class="lead">
+        <article class="lead-story"><span class="label">Today's lead</span><h2>在计算与金融之间，寻找<em>可解释的答案</em>。</h2><p class="standfirst">我目前就读于南京大学计算机科学与技术系，修读计算机科学与技术、金融工程双学位。我的学习横跨算法、系统、数据与金融建模，希望以扎实的计算机能力理解复杂问题，并把模型转化为可靠、可复现的实现。</p></article>
+        <aside class="status" aria-label="当前规划"><p class="overline">Current Direction</p><h3>本校保研<br>直博准备中</h3><p>持续夯实专业基础，积累研究训练与项目实践，为后续的长期学术研究做好准备。</p><div class="folio"><span>NJU</span><span>2026</span></div></aside>
+      </div>
+      <section id="profile">
+        <header class="section-head"><span class="num">01</span><h2>个人信息</h2><p class="section-note">Profile &amp; Capabilities</p></header>
+        <div class="profile">
+          <div class="profile-copy"><p><strong>Computer Science and Financial Engineering</strong> 将计算机科学的算法、数据处理和系统实现能力，与金融工程中的数学建模、风险分析和定量方法连接起来。</p><p>这一交叉训练既要求理解数据结构、程序设计和机器学习，也需要把概率统计、优化方法与金融问题结合起来。对我而言，它提供了一条完整的问题解决路径：从抽象问题、建立模型，到编程验证与分析结果。</p></div>
+          <dl class="facts"><div><dt>姓名</dt><dd>北白川</dd></div><div><dt>学校</dt><dd>南京大学</dd></div><div><dt>院系</dt><dd>计算机科学与技术系</dd></div><div><dt>学位</dt><dd>计算机科学与技术 × 金融工程</dd></div><div><dt>规划</dt><dd>本校保研直博</dd></div></dl>
+        </div>
+        <div class="skills" aria-label="技术能力">
+          <article class="skill"><span class="skill-index">I / IV</span><h3>C / C++</h3><p>用于算法实现、数据结构与程序设计训练，关注程序结构、运行效率和基础工程能力。</p></article>
+          <article class="skill"><span class="skill-index">II / IV</span><h3>Python</h3><p>用于数据处理、数值实验与快速验证，把分析思路组织成清晰、可复现的代码流程。</p></article>
+          <article class="skill"><span class="skill-index">III / IV</span><h3>PyTorch</h3><p>用于机器学习模型的搭建、训练和实验，逐步建立从数据到评估的完整实践能力。</p></article>
+          <article class="skill"><span class="skill-index">IV / IV</span><h3>Codex Workflow</h3><p>将 Codex 用于编程协作、调试和迭代，在理解代码的前提下提高实现与整理效率。</p></article>
+        </div>
+      </section>
+      <div class="columns">
+        <section id="projects"><header class="section-head"><span class="num">02</span><h2>个人项目</h2></header><div class="empty"><b>⌁</b><h3>项目档案正在整理</h3><p>这里将记录课程项目、研究实践与开源作品，包括问题背景、实现方法和阶段成果。</p></div></section>
+        <section id="reading"><header class="section-head"><span class="num">03</span><h2>在读文献</h2></header><div class="empty"><b>§</b><h3>阅读清单正在整理</h3><p>这里将收录目前阅读的论文、书籍与笔记，并保留主题、进度和个人摘要。</p></div></section>
+      </div>
+      <section id="posts">
+        <header class="section-head"><span class="num">04</span><h2>文章与随笔</h2><p class="section-note">Notes, Images &amp; Ideas</p></header>
+        <div class="toolbar"><div><strong>本地帖子编辑台</strong><small>内容保存在当前浏览器；导出主页后再手动上传 GitHub。</small></div><div class="button-row"><button class="btn btn-light" id="new" type="button">＋ 新建帖子</button><button class="btn btn-outline" id="export-page" type="button">导出主页</button><button class="btn btn-outline" id="export-data" type="button">备份数据</button><button class="btn btn-outline" id="import-data" type="button">导入数据</button></div></div>
+        <div class="posts" id="post-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer><strong>北白川</strong><span>记录学习，也记录问题如何被一步步解开。</span><a href="#top">回到报头 ↑</a></footer>
+  </div>
+  <dialog id="editor">
+    <div class="dialog-head"><h2>新建帖子</h2><button class="close" id="close" type="button" aria-label="关闭">×</button></div>
+    <form class="form" id="post-form">
+      <div class="field"><label for="post-title">标题</label><input id="post-title" name="title" required maxlength="80" placeholder="这篇帖子想记录什么？"></div>
+      <div class="form-grid"><div class="field"><label for="post-date">日期</label><input id="post-date" name="date" type="date" required></div><div class="field"><label for="post-tag">栏目</label><input id="post-tag" name="tag" maxlength="24" placeholder="例如：学习札记"></div></div>
+      <div class="field"><label for="post-content">正文</label><textarea id="post-content" name="content" required maxlength="5000" placeholder="写下正文……"></textarea></div>
+      <div class="field"><label for="post-images">图片</label><input id="post-images" name="images" type="file" accept="image/*" multiple><small>每篇最多 4 张；图片会压缩并嵌入主页。</small></div>
+      <p class="notice" id="notice" role="status"></p><div class="form-actions"><button class="btn" type="submit">保存帖子</button></div>
+    </form>
+  </dialog>
+  <input class="hidden" id="data-file" type="file" accept="application/json,.json">
+  <script id="published-posts" type="application/json">[]</script>
+  <script>
+  (()=>{
+    const KEY="kitashirakawa-homepage-posts-v1",list=document.querySelector("#post-list"),dialog=document.querySelector("#editor"),form=document.querySelector("#post-form"),notice=document.querySelector("#notice"),publishedNode=document.querySelector("#published-posts");
+    const editing=location.protocol==="file:"||new URLSearchParams(location.search).has("edit");
+    let published=[],posts=[];
+    document.querySelector("#today").textContent=new Intl.DateTimeFormat("zh-CN",{year:"numeric",month:"long",day:"numeric"}).format(new Date());
+    try{published=JSON.parse(publishedNode.textContent||"[]")}catch(e){published=[]}
+    try{posts=editing&&localStorage.getItem(KEY)?JSON.parse(localStorage.getItem(KEY)):published}catch(e){posts=published}
+    if(!Array.isArray(posts))posts=[];if(editing)document.documentElement.classList.add("editing");
+    const save=()=>{if(!editing)return;try{localStorage.setItem(KEY,JSON.stringify(posts))}catch(e){alert("浏览器本地空间不足，请减少图片或先备份数据。")}};
+    function render(){
+      list.replaceChildren();
+      if(!posts.length){const box=document.createElement("div");box.className="posts-empty";const a=document.createElement("strong"),b=document.createElement("span");a.textContent=editing?"还没有帖子":"文字正在酝酿中";b.textContent=editing?"点击“新建帖子”，写下第一篇内容。":"这里将发布学习记录、项目思考与日常观察。";box.append(a,b);list.append(box);return}
+      [...posts].sort((a,b)=>String(b.date).localeCompare(String(a.date))).forEach(post=>{
+        const article=document.createElement("article");article.className="post";
+        if(Array.isArray(post.images)&&post.images.length){const media=document.createElement("div");media.className="media"+(post.images.length===1?" one":"");post.images.forEach((src,i)=>{const img=document.createElement("img");img.src=src;img.alt=`${post.title} · 图片 ${i+1}`;img.loading="lazy";media.append(img)});article.append(media)}
+        const meta=document.createElement("div"),tag=document.createElement("span"),date=document.createElement("time"),title=document.createElement("h3"),content=document.createElement("p"),actions=document.createElement("div"),remove=document.createElement("button");
+        meta.className="meta";tag.textContent=post.tag||"随笔";date.dateTime=post.date;date.textContent=post.date;meta.append(tag,date);title.textContent=post.title;content.className="content";content.textContent=post.content;actions.className="actions";remove.className="delete";remove.type="button";remove.textContent="删除这篇";remove.onclick=()=>{if(confirm(`确定删除《${post.title}》吗？`)){posts=posts.filter(x=>x.id!==post.id);save();render()}};actions.append(remove);article.append(meta,title,content,actions);list.append(article)
+      })
+    }
+    function imageData(file){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onerror=reject;reader.onload=()=>{const img=new Image();img.onerror=reject;img.onload=()=>{const max=1600,scale=Math.min(1,max/Math.max(img.width,img.height)),canvas=document.createElement("canvas");canvas.width=Math.round(img.width*scale);canvas.height=Math.round(img.height*scale);canvas.getContext("2d").drawImage(img,0,0,canvas.width,canvas.height);resolve(canvas.toDataURL("image/jpeg",.84))};img.src=reader.result};reader.readAsDataURL(file)})}
+    function download(name,content,type){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement("a");a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+    function exportPage(){const clone=document.documentElement.cloneNode(true);clone.classList.remove("editing");clone.querySelector("#published-posts").textContent=JSON.stringify(posts).replace(/</g,"\\u003c");clone.querySelector("#post-list").replaceChildren();clone.querySelector("#editor").removeAttribute("open");download("index.html","<!doctype html>\n"+clone.outerHTML,"text/html;charset=utf-8")}
+    document.querySelector("#new").onclick=()=>{form.reset();form.elements.date.value=new Date().toISOString().slice(0,10);notice.textContent="";dialog.showModal()};document.querySelector("#close").onclick=()=>dialog.close();dialog.onclick=e=>{if(e.target===dialog)dialog.close()};
+    form.onsubmit=async e=>{e.preventDefault();const files=[...form.elements.images.files].slice(0,4);notice.textContent=files.length?"正在处理图片……":"正在保存……";try{const images=await Promise.all(files.map(imageData));posts.push({id:crypto.randomUUID?crypto.randomUUID():String(Date.now()),title:form.elements.title.value.trim(),date:form.elements.date.value,tag:form.elements.tag.value.trim(),content:form.elements.content.value.trim(),images});save();render();dialog.close()}catch(err){notice.textContent="图片处理失败，请换一张图片后重试。"}};
+    document.querySelector("#export-page").onclick=exportPage;document.querySelector("#export-data").onclick=()=>download("beibaichuan-posts.json",JSON.stringify(posts,null,2),"application/json;charset=utf-8");document.querySelector("#import-data").onclick=()=>document.querySelector("#data-file").click();document.querySelector("#data-file").onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data))throw Error();posts=data;save();render();alert("帖子数据已导入。完成修改后请点击“导出主页”。")}catch(err){alert("无法导入：请选择此前导出的帖子 JSON 文件。")};e.target.value=""};render();
+  })();
+  </script>
+</body>
+</html>
